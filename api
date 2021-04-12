@@ -1,0 +1,50 @@
+Request Parameter To Required
+
+Api Url :- https://developerbazaar.com/api/
+Method To Send :- POST
+Request Parameter Required :- 
+            1.request = "Which Kind Of Request i.e Wordpress Website, Ecommerce Website".
+	    2.amount = "Amount which paid to us i.e 100,200".
+            3.currency = "Currency which you have to paid to us i.e EURO,USD"
+
+
+
+Response To Get 
+1.When Sender method is wrong.
+{
+  "status": "error",
+  "message": "Request Method Choose Wrong",
+  "error_code": 0
+}
+
+2.When Parameter field are missing.
+{
+  "status": "error",
+  "message": "Some Parameter is missing or wrong",
+  "error_code": 0
+}
+3.When Transaction Created Succesfully !.
+{
+  "status": "success",
+  "message": "Transaction Created Successfully !",
+  "error_code": 1,
+  "transaction_id": "607457ef7bc99"
+}
+
+
+
+Data Sync Hooks to get data
+
+Api Url :- https://developerbazaar.com/api/transaction
+
+Response To Get
+
+{
+  "transaction_id": "607457ef7bc99",
+  "timestamp": "",
+  "request": "testing",
+  "amount": "10",
+  "currency": "euro",
+  "ip": "49.36.39.15",
+  "status": "success"
+}
